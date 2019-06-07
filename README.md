@@ -1,2 +1,4 @@
-# v-comparionbar
-Vue comparison bar ui for refinancing summary 
+# StackedProgressBar
+Vue StackedProgressBar ui for refinancing summary .
+
+USAGE
