@@ -1,18 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <StackedProgressBar :list="values" :striped="false" :label-location="labelLocation"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import StackedProgressBar from './components/StackedProgressBar.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    StackedProgressBar
+  },
+  data() {
+    return {
+      values: [
+        { text: '20.TL', description: 'İlk Taksit', percentage: 30, striped: true, color: '#60c558'},
+        { text: '1220.TL', description: 'Toplam Ödeme', percentage: 30, striped: false, color: '#60c558' }
+        // { text: '420.TL', description: 'Kalan', percentage: 60, striped: true, color: '#edabba' }
+        ],
+      labelLocation: 'outside'
+
+    }
   }
+
 }
 </script>
 
