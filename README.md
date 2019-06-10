@@ -16,12 +16,11 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+You can install from npm
 
 ```
-Give the example
+npm i vue-stacked-progress-bar
+
 ```
 
 And repeat
