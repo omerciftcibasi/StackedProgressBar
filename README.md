@@ -4,15 +4,9 @@ Vue Stacked Progress Bar component for multiple staged progress.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Vue Stacked Progress Bar is a Single File Component can be used to exhibit data list in progress line.
+I also provide a handy ui to represent comparing paired data values.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
@@ -23,64 +17,45 @@ npm i vue-stacked-progress-bar
 
 ```
 
-And repeat
+### Usage
+
+Register Vue component and provide prop data.
 
 ```
-until finished
+<template>
+  <div id="app">
+    <StackedProgressBar :list="values" :striped="false" :label-location="labelLocation"/>
+  </div>
+</template>
+
+<script>
+import StackedProgressBar from './components/StackedProgressBar.vue'
+export default {
+  name: 'app',
+  components: {
+    StackedProgressBar
+  },
+  data() {
+    return {
+      values: [
+        { text: '20.TL', description: 'İlk Taksit', percentage: 30, striped: true, color: '#60c558'},
+        { text: '1220.TL', description: 'Toplam Ödeme', percentage: 30, striped: false, color: '#60c558' }
+        // { text: '420.TL', description: 'Kalan', percentage: 60, striped: true, color: '#edabba' }
+        ],
+      labelLocation: 'outside'
+    }
+  }
+}
+</script>
+
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+### Demo
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Here is a JSfiddle demo you can test. 
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
