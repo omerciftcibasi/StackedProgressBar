@@ -5,7 +5,7 @@ Vue Stacked Progress Bar component for multiple staged progress.
 ## Getting Started
 
 Vue Stacked Progress Bar is a Single File Component can be used to exhibit data list in progress line.
-I also provide a handy ui to represent comparing paired data values.
+It also provide a handy ui to represent comparing paired data values.
 
 
 ### Installing
@@ -51,7 +51,7 @@ export default {
 ```
 
 
-### Demo
+## Demo
 
 Here is a JSfiddle demo you can test. 
 
