@@ -10,7 +10,7 @@ It also provide a handy ui to represent comparing paired data values.
 
 ### Installing
 
-You can install from npm
+You can install it from npm
 
 ```
 npm i vue-stacked-progress-bar
@@ -52,6 +52,7 @@ export default {
 
 
 ## Demo
+
 
 Here is a JSfiddle demo you can test. 
 
